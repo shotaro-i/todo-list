@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Todo List (Vanilla JS)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <h1>Todo</h1>
+        <p class="muted">
+          Simple todo app — add, edit, complete, delete. Data saved locally.
+        </p>
+      </header>
+
+      <section class="add-area" aria-labelledby="add-todo">
+        <label id="add-todo"  class="sr-only">Add todo</label>
+        <input
+          id="newTodo"
+          type="text"
+          placeholder="What needs to be done?"
+          aria-label="New todo"
+        />
+        <button id="addBtn" class="btn">Add</button>
+      </section>
+
+      <section class="controls">
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="active">Active</button>
+          <button class="filter" data-filter="completed">Completed</button>
+        </div>
+        <div class="actions">
+          <button id="clearCompleted" class="btn small">Clear completed</button>
+        </div>
+      </section>
+
+      <section class="list-area">
+        <ul id="todoList" class="todo-list" aria-live="polite"></ul>
+      </section>
+
+      <footer class="app-footer">
+        <span id="count">0 items</span>
+      </footer>
+    </main>
+  </body>
+</html>
