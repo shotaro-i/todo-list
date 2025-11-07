@@ -25,7 +25,6 @@
     return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
   }
 
-
   function render() {
     list.innerHTML = "";
     const visible = todos.filter((t) =>
@@ -36,7 +35,6 @@
     const remaining = todos.filter((t) => !t.done).length;
     countEl.textContent = `${remaining} item${remaining !== 1 ? "s" : ""}`;
   }
-
 
   function createItem(todo) {
     const li = document.createElement("li");
@@ -56,6 +54,15 @@
     title.className = "title";
     title.tabIndex = 0;
     title.textContent = todo.text;
+    // show full text on hover (helpful when truncated visually)
+    title.title = todo.text;
+    // allow Enter or Space to start edit when the title has focus
+    title.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        startEdit(title, todo);
+      }
+    });
     // double click to edit
     title.addEventListener("dblclick", () => startEdit(title, todo));
 

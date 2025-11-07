@@ -8,7 +8,7 @@ Features
 
 - Add todos
 - Toggle completed
-- Edit by double-click or edit button
+- Edit by double-click or edit button ,or press enter or space when focused
 - Delete
 - Filter (All / Active / Completed)
 - Clear completed
