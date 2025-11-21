@@ -115,6 +115,8 @@ body {
   word-break: break-word;
   white-space: normal; /* allow multiline wrapping */
 }
+
+
 .todo-item.completed .title {
   text-decoration: line-through;
   color: var(--muted);

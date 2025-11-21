@@ -1,8 +1,14 @@
-# Todo List (Vanilla JS) 
+# Todo List (Vanilla JS)
 
 Simple, dependency-free todo app.
 
-I created a prototype using AI, reviewed the code myself, and made modifications.
+## How this project was built
+
+- Learning project
+- Initial skeleton generated with GitHub Copilot
+- The rest was vibe-driven development with heavy AI assistance
+- Every line was **reviewed, tested, and either kept with confidence or rewritten/deleted by me**  
+  → The final code contains only what I'm confident in and take responsibility for
 
 Features
 
