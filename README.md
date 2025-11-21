@@ -1,6 +1,6 @@
 # Todo List (Vanilla JS)
 
-[![Demo](https://img.shields.io/badge/Live_Demo-👀_Click_here!-blue?style=for-the-badge&logo=vercel)](https://shotaro-i.github.io/todo-list/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-👀_Click_here!-blue?style=for-the-badge&logo=github)](https://shotaro-i.github.io/todo-list/)
 
 Simple, dependency-free todo app.
 
