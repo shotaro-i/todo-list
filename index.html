@@ -10,14 +10,41 @@
   <body>
     <main class="app">
       <header class="app-header">
-        <h1>Todo</h1>
-        <p class="muted">
-          Simple todo app — add, edit, complete, delete. Data saved locally.
-        </p>
+        <div class="app-header-container">
+          <div class="app-header-title">
+            <h1>Todo</h1>
+            <p class="muted">
+              Simple todo app — add, edit, complete, delete. Data saved locally.
+            </p>
+          </div>
+          <div class="header-actions">
+            <a
+              class="github-link"
+              href="https://github.com/shotaro-i/todo-list"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View source on GitHub (opens in a new tab)"
+            >
+              <svg
+                class="github-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 .296a12 12 0 00-3.797 23.403c.6.11.82-.26.82-.577v-2.02c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.305 3.492.998.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.467-2.381 1.235-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 016 0c2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.839 1.233 1.91 1.233 3.22 0 4.61-2.803 5.624-5.475 5.92.43.372.814 1.102.814 2.222v3.293c0 .319.218.69.825.573A12.004 12.004 0 0012 .296"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </header>
 
       <section class="add-area" aria-labelledby="add-todo">
-        <label id="add-todo"  class="sr-only">Add todo</label>
+        <label id="add-todo" class="sr-only">Add todo</label>
         <input
           id="newTodo"
           type="text"

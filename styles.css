@@ -39,6 +39,50 @@ body {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+/* header layout for title + actions */
+.app-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.app-header-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: var(--muted);
+  background: transparent;
+  text-decoration: none;
+  transition: background-color 160ms, color 160ms, transform 120ms;
+}
+.github-link:hover {
+  background: rgba(37, 99, 235, 0.06);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+.github-link:focus {
+  outline: 3px solid rgba(37, 99, 235, 0.14);
+  outline-offset: 2px;
+}
+.github-icon {
+  width: 20px;
+  height: 20px;
+}
 .add-area {
   display: flex;
   gap: 8px;
